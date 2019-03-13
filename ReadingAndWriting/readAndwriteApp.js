@@ -6,7 +6,7 @@
 var fs = require('fs');
 
 /*
-  fs provide the method readFileSync() which a synchronous method.
+  fs provide the method readFileSync() which a synchronous method. Blocking code
   synchronous method --> will not let the program flow to next line untill the excution is completed.
                         In this case untill the fs module has read the txt file it will stop at that point
                         and only go to next line once the read process is complete.

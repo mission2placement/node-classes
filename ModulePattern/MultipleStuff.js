@@ -3,7 +3,7 @@ var counter = function(arr){
 };
 
 var addition = function(a, b){
-  // back ticks 
+  // back ticks
   return `The sum is ${a + b}`;    // This is a template string which helps us to write an expression inside using ${}. It's an es6 addition.
 };
 

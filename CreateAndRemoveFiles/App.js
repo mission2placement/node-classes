@@ -8,6 +8,11 @@ var fs = require('fs');
 // })
 
 // to remove the above dir we need to first remove the file inside and then call the rmdir() to remove it.
-
 fs.unlink('./practice/myFile.txt', function(err){});
 fs.rmdir('practice', function(err){});
+
+// ------------------OR----------------------- //
+// We can use the async callbacks to remove like this:
+fs.unlink('./practice/myFile.txt', () => {
+  fs.rmdir('practice', ()=>{})
+})
